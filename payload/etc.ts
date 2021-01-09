@@ -9,7 +9,11 @@ const etc: IEtc.Payload = {
       subTitle: '발명의 명칭 애플릿 발급 시스템 및 그 방법, 그리고 이에 적용되는 장치',
       startedAt: '2014-01',
     },
-
+    {
+      title: '정보처리 기사',
+      subTitle: '한국 산업 인력 공단',
+      startedAt: '2004-06',
+    },
   ],
 };
 
