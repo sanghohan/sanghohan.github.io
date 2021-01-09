@@ -1,8 +1,8 @@
-import { DateTime } from 'luxon';
+// import { DateTime } from 'luxon';
 import { PropsWithChildren } from 'react';
 import { CommonRows } from '../common/CommonRow';
 import { IRow } from '../common/IRow';
-import Util from '../common/Util';
+// import Util from '../common/Util';
 import { EmptyRowCol } from '../common';
 import { IPresentation } from './IPresentation';
 
@@ -21,9 +21,7 @@ export default function PresentationRow({
 function serialize(item: IPresentation.Item): IRow.Payload {
   return {
     left: {
-      title: DateTime.fromFormat(item.at, Util.LUXON_DATE_FORMAT.YYYY_LL).toFormat(
-        Util.LUXON_DATE_FORMAT.YYYY_DOT_LL,
-      ),
+      title: '',
     },
     right: {
       ...item,

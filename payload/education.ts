@@ -5,8 +5,8 @@ const education: IEducation.Payload = {
 
   list: [
     {
-      title: '단국대학교 서울캠퍼스',
-      subTitle: '전기전자 컴퓨터 공학부 졸업',
+      title: '단국대학교',
+      subTitle: '전기전자 컴퓨터 공학부 서울캠퍼스 졸업',
       startedAt: '1999-03',
       endedAt: '2005-08',
     },

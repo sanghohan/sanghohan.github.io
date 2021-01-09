@@ -5,16 +5,13 @@ const presentation: IPresentation.Payload = {
 
   list: [
     {
-      title: 'Lorem ipsum',
-      subTitle: 'consectetur adipiscing elit',
-      at: '2017-10',
+      title: '수행 프로젝트 상세',
+      subTitle: '',
+      // at: '2017-10',
       descriptions: [
         {
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-        },
-        {
           content: 'Slideshare:',
-          postHref: 'https://www.slideshare.net//',
+          postHref: 'https://www.slideshare.net/secret/Jxpsd6PlFlgOzn',
         },
       ],
     },
