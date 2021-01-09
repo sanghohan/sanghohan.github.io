@@ -43,7 +43,7 @@ const profile: IProfile.Payload = {
     },
   ],
   notice: {
-    title: '저에 대해 궁금한 것이 있으면 언제든 연락 해 주세요',
+    title: '저에 대해 궁금한 것이 있으면 언제든 연락 주세요',
     icon: faBell,
   },
 };
