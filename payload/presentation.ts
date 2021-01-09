@@ -10,7 +10,7 @@ const presentation: IPresentation.Payload = {
       // at: '2017-10',
       descriptions: [
         {
-          content: 'Slideshare:',
+          content: 'Slideshare : ',
           postHref: 'https://www.slideshare.net/secret/Jxpsd6PlFlgOzn',
         },
       ],
