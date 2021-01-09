@@ -10,7 +10,7 @@ const experience: IExperience.Payload = {
       descriptions: [
         '회원 파트 결제수단 API 개발, FDS 적용',
         '전시 파트 배치서버 운영, 전시 Admin 3.0 백엔드 개발',
-        '원스토어 인앤결제 서버 API 설계/개발/구축/운영 https://dev.onestore.co.kr/devpoc/reference/view/IAP_v17_09_server_api',
+        '원스토어 인앤결제 서버 API 설계/개발/구축/운영, Log Viewer개발 https://dev.onestore.co.kr/devpoc/reference/view/IAP_v17_09_server_api',
         '원스토어 결제시스템 Pay-Planet Core 시스템 운영',
       ],
       skillKeywords: ['Java', 'Spring', 'Hystrix', 'Oracle', 'Mysql', 'Jenkins', 'javaScript', 'Jquery'],
