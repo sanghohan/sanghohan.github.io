@@ -14,7 +14,8 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             { content: '부정 접속 방지를 위한 FDS 적용 진행 중' },
-            { content: 'FDS 연동 시 Hystrix 적용하여 운영 안정성 고려' },
+            { content: '회원파트 결제 수단 추가 개발' },
+            { content: 'PG사 연동 개발' },
           ],
         },
         {
@@ -23,7 +24,7 @@ const project: IProject.Payload = {
           descriptions: [
             {
               content:
-                '2년간 진행 되지 않았던 전시 랭킹 배치 신규 버전으로 porting 프로젝트 성공, 서버 이전 작업',
+                '2년간 진행 되지 않았던 전시 랭킹 배치 신규 버전으로 porting 프로젝트 성공, 원스토어 배치 서버 전체 이전 작업',
             },
             {
               content: '전시 3.0 Admin 백엔드 개발 - 밤낮/주말을 가리지 않아서 촉박한 일정을 소화',
@@ -57,6 +58,7 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             { content: '인수인계 받은지 2주만에 결제 시스템 오픈/안정적인 운영' },
+            { content: 'PG사 연동개발, 통신사 연동 개발' },
             { content: '운영에 필요한 Admin 개발, log viewer 개발 등으로 운영효율 증대' },
           ],
         },
@@ -117,15 +119,10 @@ const project: IProject.Payload = {
       endedAt: '2009-12',
       where: '이노에이스',
       descriptions: [
-        {
-          content: 'SK Telecom ZoneCasting',
-          weight: 'MEDIUM',
-          descriptions: [
             { content: 'tcp/udp를 동시에 지원하여, p2p 및 방송 패킷 동시 가능하도록 개발 함' },
             { content: '방송 패킷을 빠르게 전송해야하는 요구사항을 방송 기준치를 상회하여 충족함' },
           ],
-        },
-      ],
+
     },
     {
       title: 'SKT 모바일 네트워크 게임 게이트웨이',

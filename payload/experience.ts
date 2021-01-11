@@ -17,6 +17,7 @@ const experience: IExperience.Payload = {
       skillKeywords: [
         'Java',
         'Spring',
+        'Netty',
         'Hystrix',
         'Oracle',
         'Mysql',
@@ -31,7 +32,7 @@ const experience: IExperience.Payload = {
       startedAt: '2011-07',
       endedAt: '2013-05',
       descriptions: ['NFC Open Platform TSM 서버 개발/운영', 'Usim card management system 운영'],
-      skillKeywords: ['Java', 'Spring', 'Oracle', 'javaScript', 'Jquery', 'Jenkins'],
+      skillKeywords: ['Java', 'Spring', 'Netty', 'Oracle', 'javaScript', 'Jquery', 'Jenkins'],
     },
     {
       title: '이노에이스',
@@ -45,7 +46,6 @@ const experience: IExperience.Payload = {
       ],
       skillKeywords: [
         'Java',
-        'Spring',
         'Tomcat',
         'Unix-c',
         'tcp/udp',
