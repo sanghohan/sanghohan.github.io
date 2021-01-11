@@ -119,10 +119,9 @@ const project: IProject.Payload = {
       endedAt: '2009-12',
       where: '이노에이스',
       descriptions: [
-            { content: 'tcp/udp를 동시에 지원하여, p2p 및 방송 패킷 동시 가능하도록 개발 함' },
-            { content: '방송 패킷을 빠르게 전송해야하는 요구사항을 방송 기준치를 상회하여 충족함' },
-          ],
-
+        { content: 'tcp/udp를 동시에 지원하여, p2p 및 방송 패킷 동시 가능하도록 개발 함' },
+        { content: '방송 패킷을 빠르게 전송해야하는 요구사항을 방송 기준치를 상회하여 충족함' },
+      ],
     },
     {
       title: 'SKT 모바일 네트워크 게임 게이트웨이',
