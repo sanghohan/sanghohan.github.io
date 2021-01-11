@@ -1,4 +1,4 @@
-import favicon from '../asset/favicon.ico';
+import favicon from '../asset/table-tennis.ico';
 import previewImage from '../asset/preview.jpg';
 import { IGlobal } from '../component/common/IGlobal';
 
