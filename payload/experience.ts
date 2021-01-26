@@ -17,6 +17,7 @@ const experience: IExperience.Payload = {
       skillKeywords: [
         'Java',
         'Spring',
+        'JPA',
         'Netty',
         'Hystrix',
         'Oracle',
