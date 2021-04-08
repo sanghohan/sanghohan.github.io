@@ -13,7 +13,7 @@ const project: IProject.Payload = {
           content: '2020년 - 회원 모듈 운영, 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { content: '부정 접속 방지를 위한 FDS 적용 진행 중' },
+            { content: '인증 레거시 리펙토링' },
             { content: '회원파트 결제 수단 추가 개발' },
             { content: 'PG사 연동 개발' },
           ],
