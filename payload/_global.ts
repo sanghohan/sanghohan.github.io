@@ -1,5 +1,5 @@
 import favicon from '../asset/table-tennis.ico';
-import previewImage from '../asset/preview.jpg';
+import previewImage from '../asset/table-tennis2.ico';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = 'Resume - 한상호';
