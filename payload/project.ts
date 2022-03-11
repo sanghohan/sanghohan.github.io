@@ -10,10 +10,18 @@ const project: IProject.Payload = {
       descriptions: [
         { content: 'OneStore Api Center 개발/운영' },
         {
-          content: '2020년 - 회원 모듈 운영, 개발',
+          content: '2021년 - 원스토리 신 서버 구축',
           weight: 'MEDIUM',
           descriptions: [
-            { content: '인증 레거시 리펙토링' },
+            { content: '개발 서버들(was, batch, mq..) 이전/구축' },
+            { content: '원스토리 Api bug fix/운영' },
+          ],
+        },
+        {
+          content: '2020 ~ 2021년 - 회원 모듈 운영, 개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: '레거시 리펙토링' },
             { content: '회원파트 결제 수단 추가 개발' },
             { content: 'PG사 연동 개발' },
           ],
