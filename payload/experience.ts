@@ -8,7 +8,7 @@ const experience: IExperience.Payload = {
       position: 'Software Enginner, DevOps',
       startedAt: '2013-06',
       descriptions: [
-        '회원 파트 개발/운영',
+        '원스토리(원스토어 북스) 서버 이전 작업, 전시 API 운영',
         '전시 파트 배치서버 운영, 전시 Admin 3.0 백엔드 개발',
         '원스토어 인앤결제 서버 Open API 개발',
         '원스토어 결제시스템 Pay-Planet Core 시스템 운영',
