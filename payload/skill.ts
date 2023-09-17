@@ -4,7 +4,7 @@ const backend: ISkill.Skill = {
   category: 'Back-end',
   items: [
     {
-      title: 'Java',
+      title: 'Java, Kotlin',
       level: 3,
     },
     {
@@ -26,6 +26,28 @@ const backend: ISkill.Skill = {
   ],
 };
 
+const infra: ISkill.Skill = {
+  category: 'Infra',
+  items: [
+    {
+      title: 'AWS',
+      level: 3,
+    },
+    {
+      title: 'K8S(EKS)',
+      level: 3,
+    },
+    {
+      title: 'Airflow',
+      level: 3,
+    },
+    {
+      title: 'GCP',
+      level: 2,
+    },
+  ],
+};
+
 const database: ISkill.Skill = {
   category: 'Database',
   items: [
@@ -34,7 +56,7 @@ const database: ISkill.Skill = {
       level: 3,
     },
     {
-      title: 'Oracle',
+      title: 'Postgresql',
       level: 3,
     },
     {
@@ -56,12 +78,12 @@ const frontend: ISkill.Skill = {
       level: 2,
     },
     {
-      title: 'jquery.js',
+      title: 'Vue.js',
       level: 2,
     },
     {
-      title: 'React.js',
-      level: 1,
+      title: 'jquery.js',
+      level: 2,
     },
   ],
 };
@@ -89,7 +111,7 @@ const etc: ISkill.Skill = {
 
 const skill: ISkill.Payload = {
   disable: false,
-  skills: [backend, database, frontend, etc],
+  skills: [backend, infra, database, frontend, etc],
   tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
 };
 

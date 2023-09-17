@@ -4,6 +4,32 @@ const project: IProject.Payload = {
   disable: false,
   list: [
     {
+      title: '고객 식별 키 발급 시스템 개발',
+      startedAt: '2022-06',
+      endedAt: '2022-12',
+      where: '이마트',
+      descriptions: [
+        { content: 'OneStore Api Center 개발/운영' },
+        {
+          content: '2021년 - 원스토리 신 서버 구축',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: '개발 서버들(was, batch, mq..) 이전/구축' },
+            { content: '원스토리 Api bug fix/운영' },
+          ],
+        },
+        {
+          content: '2020 ~ 2021년 - 회원 모듈 운영, 개발',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: '레거시 리펙토링' },
+            { content: '회원파트 결제 수단 추가 개발' },
+            { content: 'PG사 연동 개발' },
+          ],
+        },
+      ],
+    },
+    {
       title: 'Store Api Center(SAC)',
       startedAt: '2019-01',
       where: 'OneStore',

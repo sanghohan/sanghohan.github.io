@@ -4,7 +4,29 @@ const experience: IExperience.Payload = {
   disable: false,
   list: [
     {
-      title: '원스토어(구 SK Planet)',
+      title: '이마트(DT 본부)',
+      position: 'Software Enginner, DevOps',
+      startedAt: '2022-06',
+      descriptions: [
+        '고객 데이터 기반 분석 시스템 구축/개발',
+        '광고 데이터 수집을 위한 fingerPrinter 개발, key 발급 서버 개발',
+      ],
+      skillKeywords: [
+        'Java',
+        'Kotlin',
+        'Spring',
+        'JPA',
+        'Aws',
+        'K8s',
+        'Postgresql',
+        'Bigquery',
+        'JavaScript',
+        'Vue.js',
+        'SSO',
+      ],
+    },
+    {
+      title: 'SK Planet, 원스토어',
       position: 'Software Enginner, DevOps',
       startedAt: '2013-06',
       descriptions: [
