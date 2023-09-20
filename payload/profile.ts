@@ -4,11 +4,13 @@ import { faGithub, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-ic
 import { IProfile } from '../component/profile/IProfile';
 // import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
 const profile: IProfile.Payload = {
   disable: false,
 
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
-  image: '../asset/sangho.jpg',
+  image: 'https://sanghohan.github.io/_next/static/sangho.jpg',
   name: {
     title: '한상호',
     small: '(Sangho Han)',
