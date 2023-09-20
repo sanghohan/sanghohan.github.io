@@ -8,7 +8,7 @@ const profile: IProfile.Payload = {
   disable: false,
 
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
-  image: 'https://resume.yowu.dev/static/image/profile_2019.png',
+  image: '../asset/sangho.jpg',
   name: {
     title: '한상호',
     small: '(Sangho Han)',
