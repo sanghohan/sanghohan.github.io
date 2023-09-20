@@ -1,5 +1,4 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { IProfile } from '../component/profile/IProfile';
 // import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
@@ -45,7 +44,7 @@ const profile: IProfile.Payload = {
   ],
   notice: {
     title: '저에 대해 궁금한 것이 있으면 언제든 연락주세요',
-    icon: faBell,
+    // icon: faBell,
   },
 };
 
