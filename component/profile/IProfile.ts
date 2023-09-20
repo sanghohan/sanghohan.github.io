@@ -1,4 +1,5 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+// import { StaticImageData } from 'next/image';
 import { ICommon } from '../common/ICommon';
 
 export declare namespace IProfile {

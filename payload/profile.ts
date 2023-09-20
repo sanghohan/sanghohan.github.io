@@ -1,7 +1,7 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import image from '../asset/sangho.jpg';
+// import image from '../asset/sangho.jpg';
 import { IProfile } from '../component/profile/IProfile';
 // import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
 
@@ -9,7 +9,7 @@ const profile: IProfile.Payload = {
   disable: false,
 
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
-  image,
+  image: '../asset/sangho.jpg',
   name: {
     title: '한상호',
     small: '(Sangho Han)',

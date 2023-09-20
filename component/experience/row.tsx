@@ -58,7 +58,7 @@ function createWorkingPeriod(startedAtString: string, endedAtString?: string) {
   const DATE_FORMAT = Util.LUXON_DATE_FORMAT;
   const startedAt = DateTime.fromFormat(startedAtString, DATE_FORMAT.YYYY_LL);
 
-  const { periodTitle, endedAt, isWorking } = (() => {
+  const { periodTitle, endedAt = DateTime.local(), isWorking } = (() => {
     if (!endedAtString) {
       return {
         periodTitle: `${startedAt.toFormat(DATE_FORMAT.YYYY_DOT_LL)} ~`,
