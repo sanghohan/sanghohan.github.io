@@ -12,6 +12,7 @@ export default function PresentationRow({
   return (
     <EmptyRowCol>
       {payload.list.map((item, index) => {
+        // eslint-disable-next-line react/no-array-index-key
         return <CommonRows key={index.toString()} payload={serialize(item)} index={index} />;
       })}
     </EmptyRowCol>

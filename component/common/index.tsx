@@ -9,6 +9,7 @@ export function EmptyRowCol<T = {}>({ children }: PropsWithChildren<T>) {
   );
 }
 
+// eslint-disable-next-line react/require-default-props
 export function HrefTargetBlank({ url, text }: PropsWithChildren<{ url: string; text?: string }>) {
   return (
     <a href={url} target="_blank" rel="noreferrer noopener">

@@ -34,6 +34,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
         </Col>
         <Col sm={12} md={9}>
           {payload.contents.map((content, index) => (
+            // eslint-disable-next-line react/no-array-index-key
             <p key={index.toString()}>{content}</p>
           ))}
           <p className="text-right">

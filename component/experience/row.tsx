@@ -21,6 +21,7 @@ export default function ExperienceRow({
           <i style={Style.gray}>{item.position}</i>
           <ul className="pt-3">
             {item.descriptions.map((description, descIndex) => (
+              // eslint-disable-next-line react/no-array-index-key
               <li key={descIndex.toString()}>{description}</li>
             ))}
             {createSkillKeywords(item.skillKeywords)}
@@ -42,6 +43,7 @@ function createSkillKeywords(skillKeywords?: string[]) {
         {skillKeywords.map((keyword, index) => (
           <Badge
             style={Style.skillKeywordBadge}
+            /* eslint-disable-next-line react/no-array-index-key */
             key={index.toString()}
             color="secondary"
             className="mr-1"
