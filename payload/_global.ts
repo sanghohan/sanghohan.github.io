@@ -1,12 +1,12 @@
-import favicon from '../asset/table-tennis.ico';
-import previewImage from '../asset/table-tennis2.ico';
+// import favicon from '../asset/table-tennis.ico';
+// import previewImage from '../asset/table-tennis2.ico';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = 'Resume - 한상호';
 const description = 'This is a web resume.';
 
 export const _global: IGlobal.Payload = {
-  favicon,
+  favicon: '../asset/table-tennis.ico',
   headTitle: title,
   seo: {
     title,
@@ -16,7 +16,7 @@ export const _global: IGlobal.Payload = {
       description,
       images: [
         {
-          url: previewImage,
+          url: '../asset/table-tennis2.ico',
           width: 800,
           height: 600,
           alt: 'OpenGraph Image Sample.png',

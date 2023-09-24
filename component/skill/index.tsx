@@ -32,6 +32,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           </Col>
         </Row>
         {payload.skills.map((skill, index) => (
+          // eslint-disable-next-line react/no-array-index-key
           <SkillRow key={index.toString()} skill={skill} index={index} />
         ))}
       </EmptyRowCol>

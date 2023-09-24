@@ -28,6 +28,7 @@ function Component({ payload }: PropsWithChildren<{ payload: Payload }>) {
           </Col>
         </Row>
         {payload.list.map((item, index) => (
+          // eslint-disable-next-line react/no-array-index-key
           <ExperienceRow key={index.toString()} item={item} index={index} />
         ))}
       </EmptyRowCol>

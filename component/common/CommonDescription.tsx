@@ -6,7 +6,8 @@ import { HrefTargetBlank } from '.';
 export function CommonDescription({
   descriptions,
   option,
-}: PropsWithChildren<{ descriptions: IRow.Description[]; option?: { padding?: boolean } }>) {
+}: // eslint-disable-next-line react/require-default-props
+PropsWithChildren<{ descriptions: IRow.Description[]; option?: { padding?: boolean } }>) {
   return (
     <>
       {descriptions ? (
@@ -14,10 +15,12 @@ export function CommonDescription({
           {descriptions.map((description, descIndex) => {
             return (
               <>
+                {/* eslint-disable-next-line react/no-array-index-key */}
                 <Description description={description} key={descIndex.toString()} />
                 {description.descriptions ? (
                   <DescriptionRecursion
                     descriptions={description.descriptions}
+                    /* eslint-disable-next-line react/no-array-index-key */
                     key={descIndex.toString()}
                   />
                 ) : (
@@ -43,10 +46,12 @@ function DescriptionRecursion({
       {descriptions.map((description, index) => {
         return (
           <>
+            {/* eslint-disable-next-line react/no-array-index-key */}
             <Description description={description} key={index.toString()} />
             {description.descriptions ? (
               <DescriptionRecursion
                 descriptions={description.descriptions}
+                /* eslint-disable-next-line react/no-array-index-key */
                 key={index.toString()}
               />
             ) : (

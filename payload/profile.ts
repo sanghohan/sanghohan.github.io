@@ -1,15 +1,15 @@
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { faGithub, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import image from '../asset/sangho.jpg';
 import { IProfile } from '../component/profile/IProfile';
 // import { faRss } from '@fortawesome/free-solid-svg-icons/faRss';
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
 const profile: IProfile.Payload = {
   disable: false,
 
   // image: 'https://resume.yowu.dev/static/image/profile_2019.png',
-  image,
+  image: 'https://sanghohan.github.io/_next/static/sangho.jpg',
   name: {
     title: '한상호',
     small: '(Sangho Han)',
@@ -44,7 +44,7 @@ const profile: IProfile.Payload = {
   ],
   notice: {
     title: '저에 대해 궁금한 것이 있으면 언제든 연락주세요',
-    icon: faBell,
+    // icon: faBell,
   },
 };
 

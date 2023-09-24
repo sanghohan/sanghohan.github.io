@@ -48,10 +48,12 @@ function createCalculatedSkillItems(items: ISkill.Item[]) {
     <Row className="mt-2 mt-md-0">
       {list.map((skills, index) => {
         return (
+          // eslint-disable-next-line react/no-array-index-key
           <Col md={4} xs={12} key={index.toString()}>
             <ul>
               {skills.map((skill, skillIndex) => {
                 return (
+                  // eslint-disable-next-line react/no-array-index-key
                   <li key={skillIndex.toString()}>
                     {createBadge(skill.level)}
                     {skill.title}

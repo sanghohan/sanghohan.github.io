@@ -54,6 +54,7 @@ function createProfileContactMap(contacts: Payload['contact']) {
     <Row>
       <Col className="pt-3">
         {contacts.map((contact, index) => (
+          // eslint-disable-next-line react/no-array-index-key
           <ProfileContact key={index.toString()} payload={contact} />
         ))}
       </Col>
