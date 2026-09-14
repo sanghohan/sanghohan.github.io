@@ -49,7 +49,7 @@ const about: About = {
 };
 
 const skills: SkillGroup[] = [
-  { category: 'Language', items: ['Kotlin', 'Java', 'Unix-C', 'JavaScript', 'TypeScript'] },
+  { category: 'Language', items: ['Kotlin', 'Java', 'Unix-C', 'JavaScript'] },
   {
     category: 'Framework',
     items: [
