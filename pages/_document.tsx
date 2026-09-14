@@ -1,21 +1,32 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
+import { MetaHTMLAttributes } from 'react';
+
+/** 첫 페인트 전에 저장된 테마를 적용하여 화면이 번쩍이지 않게 한다. */
+const THEME_BOOTSTRAP =
+  "(function(){try{var t=localStorage.getItem('theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();";
+
+/** @types/react 16 에는 meta 의 media 속성 타입이 없어 우회한다. */
+function themeColor(content: string, media: string): MetaHTMLAttributes<HTMLMetaElement> {
+  return { name: 'theme-color', content, media } as MetaHTMLAttributes<HTMLMetaElement>;
+}
 
 export default class ResumeDocument extends Document {
   render() {
     return (
-      <Html lang="ko-KR">
+      <Html lang="ko">
         <Head>
-          {/* Step 5: Output the styles in the head  */}
           <meta charSet="utf-8" />
-          {/* <meta name="viewport" content="initial-scale=1.0, width=device-width" /> */}
+          {/* eslint-disable react/jsx-props-no-spreading */}
+          <meta {...themeColor('#fbfaf8', '(prefers-color-scheme: light)')} />
+          <meta {...themeColor('#0f0f11', '(prefers-color-scheme: dark)')} />
+          {/* eslint-enable react/jsx-props-no-spreading */}
+          <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
           <link
-            href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700|Parisienne&display=swap&subset=korean"
             rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
           />
-          <link
-            href="https://fonts.googleapis.com/css?family=Parisienne&display=swap"
-            rel="stylesheet"
-          />
+          {/* eslint-disable-next-line react/no-danger */}
+          <script dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP }} />
         </Head>
         <body>
           <Main />

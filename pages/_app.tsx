@@ -1,9 +1,8 @@
-import 'jquery/dist/jquery.slim';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../styles/globals.css';
 
 import { NextComponentType } from 'next';
 
-export default function YosumeApp({
+export default function ResumeApp({
   Component,
   pageProps,
 }: {
