@@ -1,12 +1,10 @@
-// import favicon from '../asset/table-tennis.ico';
-// import previewImage from '../asset/table-tennis2.ico';
 import { IGlobal } from '../component/common/IGlobal';
 
 const title = 'Resume - 한상호';
-const description = 'This is a web resume.';
+const description = '19년차 백엔드 개발자 한상호의 웹 이력서입니다. Kotlin, Java, Spring 기반의 서버 개발과 팀 리딩 경험.';
 
 export const _global: IGlobal.Payload = {
-  favicon: '../asset/table-tennis.ico',
+  favicon: '/asset/table-tennis.ico',
   headTitle: title,
   seo: {
     title,
@@ -16,7 +14,7 @@ export const _global: IGlobal.Payload = {
       description,
       images: [
         {
-          url: '../asset/table-tennis2.ico',
+          url: 'https://sanghohan.github.io/asset/sangho.jpg',
           width: 800,
           height: 600,
           alt: 'OpenGraph Image Sample.png',
@@ -24,10 +22,9 @@ export const _global: IGlobal.Payload = {
       ],
       type: 'profile',
       profile: {
-        firstName: 'Lorem',
-        lastName: 'ipsum',
-        username: 'lorem',
-        gender: 'female',
+        firstName: 'Sangho',
+        lastName: 'Han',
+        username: 'sanghohan',
       },
     },
   },

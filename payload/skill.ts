@@ -1,96 +1,60 @@
 import { ISkill } from '../component/skill/ISkill';
 
-const backend: ISkill.Skill = {
-  category: 'Back-end',
+const language: ISkill.Skill = {
+  category: 'Language',
+  items: [{ title: 'Kotlin' }, { title: 'Java' }, { title: 'Unix-C' }, { title: 'JavaScript' }],
+};
+
+const framework: ISkill.Skill = {
+  category: 'Framework',
   items: [
-    {
-      title: 'Java',
-      level: 3,
-    },
-    {
-      title: 'Spring',
-      level: 3,
-    },
-    {
-      title: 'C#',
-      level: 2,
-    },
-    {
-      title: 'GO',
-      level: 2,
-    },
-    {
-      title: 'Unix-C',
-      level: 2,
-    },
+    { title: 'Spring Framework' },
+    { title: 'Spring Boot' },
+    { title: 'Spring Data JPA' },
+    { title: 'Spring Batch' },
+    { title: 'Spring Security' },
+    { title: 'React / Next.js' },
   ],
 };
 
 const database: ISkill.Skill = {
   category: 'Database',
   items: [
-    {
-      title: 'MySQL',
-      level: 3,
-    },
-    {
-      title: 'Oracle',
-      level: 3,
-    },
-    {
-      title: 'Redis',
-      level: 2,
-    },
-    {
-      title: 'MongoDB',
-      level: 1,
-    },
+    { title: 'Oracle' },
+    { title: 'PostgreSQL' },
+    { title: 'Redis' },
+    { title: 'DynamoDB' },
+    { title: 'BigQuery' },
   ],
 };
 
-const frontend: ISkill.Skill = {
-  category: 'Front-end',
+const infra: ISkill.Skill = {
+  category: 'Infra / DevOps',
   items: [
-    {
-      title: 'javascript.js',
-      level: 2,
-    },
-    {
-      title: 'jquery.js',
-      level: 2,
-    },
-    {
-      title: 'React.js',
-      level: 1,
-    },
+    { title: 'AWS (EKS)' },
+    { title: 'Azure (AKS)' },
+    { title: 'Kubernetes' },
+    { title: 'Docker' },
+    { title: 'Helm Chart' },
+    { title: 'Linux' },
   ],
 };
 
 const etc: ISkill.Skill = {
   category: 'Etc',
   items: [
-    {
-      title: 'jira',
-    },
-    {
-      title: 'linux',
-    },
-    {
-      title: 'git',
-    },
-    {
-      title: 'wiki',
-    },
-    {
-      title: 'jenkins',
-    },
+    { title: 'GitHub Actions' },
+    { title: 'Jenkins' },
+    { title: 'Argo CD / Argo Workflow' },
+    { title: 'Airflow' },
+    { title: 'Swagger' },
+    { title: 'Git' },
   ],
 };
 
 const skill: ISkill.Payload = {
-  disable: true,
-  skills: [backend, database, frontend, etc],
-  tooltip: '1: 기초 수준\n2: 취미 개발 수준\n3: Production 개발 가능 수준',
+  disable: false,
+  skills: [language, framework, database, infra, etc],
 };
 
 export default skill;
