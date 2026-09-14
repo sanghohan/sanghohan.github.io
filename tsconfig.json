@@ -29,11 +29,5 @@
   "include": [
     "**/*.ts",
     "**/*.tsx"
-  ],
-  "typedocOptions": {
-    "out": "docs/typedoc",
-    "mode": "file",
-    "name": "Resume Next.js: TypeDoc",
-    "externalPattern": "!**/I*.ts"
-  }
+  ]
 }

@@ -8,5 +8,5 @@ jobs:
     steps:
       - checkout
       - run:
-          name: install & lint build & export
-          command: npm run export:with-typedoc
+          name: install & lint & build & export
+          command: npm ci --legacy-peer-deps && npm run export
