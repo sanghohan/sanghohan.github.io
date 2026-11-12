@@ -3,7 +3,7 @@ import { Company } from './types';
 const career: Company[] = [
   {
     name: '원스토어(주)',
-    role: '개발팀장 대행 / Tech Lead',
+    role: '개발 리더 / Tech Lead',
     startedAt: '2024-04',
     summary:
       '웹 커머스 도메인의 백엔드를 총괄하며, 신규 웹샵 오픈과 국내·글로벌 웹서비스 재개발을 리딩하고 있습니다.',

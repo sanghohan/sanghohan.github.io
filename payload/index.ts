@@ -2,11 +2,11 @@ import career from './career';
 import { About, Credential, Education, LinkItem, Meta, Profile, Resume, SkillGroup } from './types';
 
 const meta: Meta = {
-  updatedAt: '2026-09-14',
+  updatedAt: '2026-11-12',
   siteUrl: 'https://sanghohan.github.io',
   title: '한상호 | Backend Engineer',
   description:
-    '19년차 백엔드 개발자 한상호의 이력서. Kotlin·Java·Spring 기반의 서버 개발과 결제·커머스 도메인, 팀 리딩 경험.',
+    '20년차 백엔드 개발자 한상호의 이력서. Kotlin·Java·Spring 기반의 서버 개발과 결제·커머스 도메인, 팀 리딩 경험.',
   favicon: '/asset/table-tennis.ico',
   ogImage: 'https://sanghohan.github.io/asset/sangho.jpg',
   sign: 'donjiral',
@@ -44,7 +44,7 @@ const about: About = {
   ],
   facts: [
     { label: '주력 스택', value: 'Kotlin · Spring' },
-    { label: '현재', value: '원스토어 개발팀장 대행' },
+    { label: '현재', value: '원스토어 개발 리더' },
   ],
 };
 
