@@ -6,17 +6,93 @@ const career: Company[] = [
     role: '개발 리더 / Tech Lead',
     startedAt: '2024-04',
     summary:
-      '웹 커머스 도메인의 백엔드를 총괄하며, 신규 웹샵 오픈과 국내·글로벌 웹서비스 재개발을 리딩하고 있습니다.',
+      '웹 커머스 도메인의 백엔드를 총괄하며 신규 웹샵 오픈과 국내·글로벌 웹서비스 재개발을 리딩했고, 현재는 원퀘스트(ONEquest)와 글로벌 버전 Cross Play에서 설계·개발·검증과 일감·PR 생성, 디펙트 처리까지 AI Agent로 자동화한 개발 프로세스를 팀 표준으로 확산하고 있습니다.',
     projects: [
+      {
+        title: '원퀘스트(ONEquest) 신규 개발·오픈 - 퀘스트·리워드 플랫폼',
+        startedAt: '2026-04',
+        summary:
+          '게임 설치·플레이 등 미션을 완료하면 원스토어 포인트(글로벌은 $ONE 토큰)를 지급하는 퀘스트·리워드 플랫폼의 백엔드를 신규 개발해 오픈. 설계·개발·검증과 일감·PR 생성까지 AI Agent 기반으로 자동화해 진행',
+        bullets: [
+          '퀘스트 등록·참여·달성 조건 검증·보상 지급(원스토어 포인트) 백엔드 API와 운영 Admin 설계·개발',
+          "입점 게임의 설치·플레이 이벤트를 퀘스트 조건으로 연동해 오픈 - '프로스트 킹덤 in 원퀘스트' 이벤트로 서비스 시작(2026.07)",
+          '텔레그램·지갑·웹으로 흩어져 있던 참여형 프로모션을 원스토어 플랫폼 안으로 통합, 글로벌 버전 Cross Play와 같은 구조로 설계',
+          '요구사항·아키텍처 제약·코딩 규칙을 담은 프로젝트 컨텍스트 문서를 기준으로 AI Agent가 도메인 모델·REST API·DB 스키마를 설계하고 구현 → 테스트 생성 → 자체 검증까지 수행, 사람은 정확성·보안·성능·유지보수성 리뷰에 집중',
+          'MCP로 Jira·Bitbucket·Confluence를 Agent에 연결해 설계 문서 → 일감 생성 → 브랜치·구현 → 테스트 → PR 생성·설명 작성까지 자동화',
+          'AI-ready DB 표준의 첫 적용 - 새 DB 엔진 대신 MySQL 위에 AI 질의에 최적화된 표준 레이어를 두는 방향으로 결정하고, Codex로 구조화 질의 PoC(SQL 파서 우회, PK fast path)를 수행·검증',
+          '설계~PR까지 반복 작업을 자동화해 개발 리드타임 단축, 테스트 커버리지와 문서 최신성 확보',
+        ],
+        stack: [
+          'Kotlin',
+          'Spring Boot',
+          'MySQL',
+          'Redis',
+          'Claude Code',
+          'Codex',
+          'MCP',
+          'Jira',
+          'Bitbucket',
+        ],
+      },
+      {
+        title: 'Cross Play(크로쓰 플레이) - 원퀘스트 글로벌 버전 개발',
+        startedAt: '2026-03',
+        summary:
+          'Cross 생태계 게임의 사전예약~플레이 단계 퀘스트를 수행하면 Cross 토큰·럭키박스를 보상하는 글로벌 퀘스트·리워드 플랫폼의 백엔드 개발',
+        bullets: [
+          '원퀘스트의 글로벌 버전으로, 국내와 동일한 AI Agent 기반 설계·개발·검증·일감·PR 자동화 프로세스로 개발',
+          '텔레그램 미니앱으로 운영되던 서비스를 웹 서비스로 확장한 Cross Play 2.0 업데이트(2026.06)에 백엔드로 참여',
+          '퀘스트 진행·검증과 보상 지급 API 개발, 글로벌 서비스에 맞춘 다국어·시간대 처리',
+        ],
+        stack: ['Kotlin', 'Spring Boot', 'MySQL', 'Claude Code', 'Codex', 'MCP'],
+      },
+      {
+        title: '디펙트 처리 자동화 - Claude·Codex 기반 원인 분석·수정·검증·PR',
+        startedAt: '2026-10',
+        summary:
+          'Jira에 등록된 디펙트를 AI Agent가 분석·수정·검증하고 PR까지 생성하도록 자동화해, 사람은 최종 리뷰와 머지 판단에 집중',
+        bullets: [
+          '등록된 디펙트(Jira)를 Agent가 읽어 재현 조건·관련 코드·로그를 분석하고 원인 후보와 영향 범위를 정리',
+          'Claude Code와 Codex를 교차 활용 - 한쪽이 수정 코드와 회귀 테스트를 작성하면 다른 쪽이 정확성·회귀 위험·보안을 독립 검토해 단일 모델 의존 완화',
+          '수정 → 테스트 → PR 생성·설명 작성 → Jira 상태 전환까지 MCP로 연결해 자동화, 사람은 최종 코드 리뷰와 머지 판단',
+          '반복 유형의 디펙트를 분류해 재발 방지 규칙(코딩 규칙·테스트 케이스)을 프로젝트 컨텍스트 문서에 반영',
+          '디펙트 1건당 분석·수정·PR 생성에 걸리는 시간을 단축하고 처리 과정을 일관된 형식으로 기록',
+        ],
+        stack: ['Claude Code', 'Codex', 'MCP', 'Jira', 'Bitbucket', 'Kotlin', 'Spring Boot'],
+      },
+      {
+        title: 'AI Agent 기반 개발 프로세스 팀 표준화',
+        startedAt: '2025-01',
+        summary:
+          'ONEquest에서 검증한 Agent 기반 개발 방식을 팀 표준으로 정리하고, AI 도구 검토와 도입 적합성 평가를 주도',
+        bullets: [
+          '레거시 API 서버(moweb-api·webshop-api 등)의 코드 분석·리팩터링·테스트 코드 생성·기술 문서화에 AI Agent를 적용',
+          'AI 생성 코드 리뷰 기준과 Agent 가이드(컨텍스트 문서·코딩 규칙 전달 방식)를 수립해 팀원이 같은 방식으로 일하도록 전파',
+          'AI Agent를 사내 Confluence·Jira와 연동해 조사·분석 결과와 기술 결정을 위키 문서로 즉시 반영',
+          'Claude·ChatGPT·Cursor·n8n·Flowise 등 AI 도구를 백엔드 워크플로 관점에서 검토하고 도입 적합성 평가',
+        ],
+        stack: ['Claude Code', 'Codex', 'MCP', 'Kotlin', 'Spring Boot'],
+      },
+      {
+        title: '백엔드 기술 방향성 수립 · 아키텍처 검토',
+        startedAt: '2025-06',
+        summary: 'JDK·동시성 모델의 기술 방향을 비교 검토해 팀의 의사결정 근거를 문서로 유지',
+        bullets: [
+          'JDK 17 + Kotlin Coroutines 기반 서비스의 JDK 25 LTS 업그레이드 방향 수립',
+          'Spring WebFlux · MVC+Coroutines · Virtual Threads(JEP 491 포함)를 비교해 Confluence 기술 문서로 유지',
+          'Coroutines→Virtual Threads 전면 전환은 ROI가 낮다고 판단해 보류 — 근거 기반의 기술 의사결정',
+        ],
+        stack: ['JDK 25', 'Kotlin Coroutines', 'Virtual Threads'],
+      },
       {
         title: '원웹샵(OneWebShop) 오픈',
         startedAt: '2024-04',
         summary: '아이템을 웹에서 판매하는 웹샵을 신규 개발하여 오픈',
         bullets: [
-          '웹샵 개발 리딩 - 업무 분배, 서버 셋팅, 네트워크, 도메인 등 구성 전반 담당',
-          'Webshop API Server 개발',
+          '웹샵 개발 리딩 - 업무 분배, 서버 셋팅, 네트워크, 도메인 등 시스템 구성 전반 담당',
+          'Webshop API Server 설계·개발 - REST API 설계 기준과 Swagger 문서 표준 정립',
         ],
-        stack: ['Kotlin', 'Spring Boot', 'Spring Data JPA', 'Redis', 'Swagger'],
+        stack: ['Kotlin', 'Spring Boot', 'Spring Data JPA', 'Redis', 'Swagger', 'Docker'],
         link: { label: 'webshop.onestore.net', href: 'https://webshop.onestore.net' },
       },
       {
@@ -27,8 +103,8 @@ const career: Company[] = [
           '프로젝트 리더, 인원 4명 (프론트 3명, 백엔드 본인 1명)',
           '레거시 소스 리팩토링 및 재개발, Backend 개발 전담',
           '국내 웹 서비스 재개발을 제안하고 주도',
-          '글로벌 웹서비스의 k8s 이전 주도',
-          '기술 부채를 해소하는 동시에 주니어·중간 레벨 개발자의 개발 스킬과 개발 의지를 끌어올림',
+          '글로벌 웹서비스의 Docker·Kubernetes(AKS) 이전을 주도 (Argo CD 배포 파이프라인은 DevOps와 협업)',
+          '코드 리뷰와 기술 멘토링으로 기술 부채를 해소하는 동시에 주니어·중간 레벨 개발자의 개발 스킬과 개발 의지를 끌어올림',
         ],
         stack: [
           'Kotlin',
@@ -41,6 +117,7 @@ const career: Company[] = [
           'JSP',
           'Redis',
           'Oracle',
+          'Docker',
           'Azure',
           'AKS',
           'Argo CD',
@@ -134,7 +211,7 @@ const career: Company[] = [
           'Front Server로부터 결제 정보를 받아 PG사(네이버페이, 페이코, 통신사 후불 등) 연동',
           '구매시스템 및 입점사에 결제 결과 전송 개발',
           '네이버 스토어 이관에 따른 결제내역 이관 작업 수행',
-          '초당 20여 건의 결제 트래픽, 하루 400~500MB의 로그가 발생하는 시스템을 단독 운영',
+          '초당 20여 건의 결제 트래픽, 하루 400~500MB의 로그가 발생하는 시스템을 단독 운영하며 장애 원인 분석과 재발 방지 대책 수립',
           '운영에 필요한 Admin, Log Viewer를 직접 개발하여 운영 효율 증대',
         ],
         stack: ['Java', 'Spring', 'Oracle'],
@@ -143,8 +220,11 @@ const career: Company[] = [
         title: '원스토어 인앱결제 SDK Open API 설계/개발',
         startedAt: '2016-03',
         endedAt: '2022-06',
-        summary: '개발사에게 구글플레이와 유사한 환경의 API를 제공하여 원스토어 입점 증대에 기여',
-        bullets: ['API 설계, 개발, 설명 문서 작성까지 담당 - 담당자 2명 중 1인'],
+        summary:
+          '개발사에게 구글플레이와 유사한 환경의 Open API를 제공하여 원스토어 입점 증대에 기여',
+        bullets: [
+          '외부 개발사가 사용하는 REST API의 설계 표준을 수립하고 개발, 개발자 문서 작성까지 담당 - 담당자 2명 중 1인',
+        ],
         stack: ['Java', 'Spring Boot'],
         link: {
           label: 'API 문서 보기',
@@ -203,7 +283,7 @@ const career: Company[] = [
         summary: 'JSP로만 이루어진 In-App 결제 시스템을 인수하여 개발/운영',
         bullets: [
           '한 파일에 8,000라인 이상인 레거시 코드를 분석 후 모듈화하여 효율적으로 운영',
-          '매달 1일 서버 폭주(Ting 요금제)로 반복되던 장애를, 열악한 환경에서 아파치 캐시·mod_ratelimit·로드 밸런싱·KeepAlive 설정으로 최소화',
+          '매달 1일 서버 폭주(Ting 요금제)로 반복되던 장애의 원인을 분석하고, 열악한 환경에서 아파치 캐시·mod_ratelimit·로드 밸런싱·KeepAlive 설정으로 재발을 최소화',
         ],
         stack: ['Java', 'JSP', 'Apache', 'Oracle'],
       },

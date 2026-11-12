@@ -4,9 +4,9 @@ import { About, Credential, Education, LinkItem, Meta, Profile, Resume, SkillGro
 const meta: Meta = {
   updatedAt: '2026-11-12',
   siteUrl: 'https://sanghohan.github.io',
-  title: '한상호 | Backend Engineer',
+  title: '한상호 | Senior Backend Engineer · Tech Lead',
   description:
-    '20년차 백엔드 개발자 한상호의 이력서. Kotlin·Java·Spring 기반의 서버 개발과 결제·커머스 도메인, 팀 리딩 경험.',
+    '20년차 백엔드 개발자 한상호의 이력서. Kotlin·Java·Spring 기반의 결제·커머스 서버 설계, 팀 리딩, AI Agent 기반 개발 프로세스.',
   favicon: '/asset/table-tennis.ico',
   ogImage: 'https://sanghohan.github.io/asset/sangho.jpg',
   sign: 'donjiral',
@@ -15,9 +15,9 @@ const meta: Meta = {
 const profile: Profile = {
   name: '한상호',
   englishName: 'Sangho Han',
-  headline: 'Backend Engineer · Tech Lead',
+  headline: 'Senior Backend Engineer · Tech Lead',
   tagline:
-    'Kotlin과 Spring으로 결제·커머스 도메인의 서버를 만들고, 레거시를 다시 살려내는 일을 해왔습니다.',
+    'Kotlin·Java·Spring으로 결제·커머스 서버의 아키텍처를 설계하고 레거시를 다시 살려 왔습니다. 지금은 AI Agent를 개발 프로세스에 녹여 팀이 일하는 방식을 바꾸는 데 집중하고 있습니다.',
   photo: '/asset/sangho.jpg',
   contacts: [
     { label: 'sanghohan@gmail.com', href: 'mailto:sanghohan@gmail.com', icon: 'mail' },
@@ -38,23 +38,25 @@ const profile: Profile = {
 
 const about: About = {
   paragraphs: [
-    '다양한 경험을 해왔고, 문제 해결 과정과 배우는 것을 즐깁니다. Kotlin, Java, Spring Framework를 사용하여 주로 업무를 해왔습니다.',
-    '여러 분야의 사람들과 소통하는 것에 익숙하여 타 부서 사람들과도 잘 어울리는 편입니다. 항상 무엇이든 먼저 해보고 효율적인 방향을 제시하려 노력합니다.',
-    'AI를 활용해 개발 전반에 반복되는 업무를 자동화하여 업무의 효율성을 높이고 있습니다.',
+    '20년간 결제·커머스·고객 데이터 도메인에서 Java·Kotlin·Spring 기반 서버를 설계하고 운영해 왔습니다. 아키텍처 설계와 기술 방향성 수립, REST API 설계 기준 정립, DB 설계와 쿼리 최적화, 장애 원인 분석과 재발 방지까지 백엔드의 전 과정을 직접 책임져 왔습니다.',
+    '현재는 개발 리딩을 맡아 코드 리뷰와 기술 멘토링, 주요 기술 과제의 설계 검토를 맡고 있으며 프론트엔드·인프라·기획 등 유관 부서와의 협업을 주도합니다. 여러 분야의 사람들과 소통하는 데 익숙하고, 무엇이든 먼저 해보고 효율적인 방향을 제시하려 노력합니다.',
+    'Claude Code·Codex 같은 AI Agent를 코드 분석·리팩터링·테스트 코드 생성·기술 문서화에 적용하고 있습니다. AI가 만든 코드의 정확성·보안·성능·유지보수성은 결국 사람이 책임져야 한다고 생각하며, 요구사항과 아키텍처 제약, 코딩 규칙을 Agent에 명확히 전달하는 방법을 정리해 팀에 확산하고 있습니다. 원퀘스트(ONEquest)와 글로벌 버전 Cross Play에서는 설계·개발·검증과 일감·PR 생성, 디펙트 처리까지 Claude·Codex 기반으로 자동화해 이 방식을 실제 서비스로 검증했습니다.',
   ],
   facts: [
-    { label: '주력 스택', value: 'Kotlin · Spring' },
+    { label: '주력 스택', value: 'Kotlin · Java · Spring' },
     { label: '현재', value: '원스토어 개발 리더' },
+    { label: 'AI Dev Tools', value: 'Claude Code · Codex' },
   ],
 };
 
 const skills: SkillGroup[] = [
-  { category: 'Language', items: ['Kotlin', 'Java', 'Unix-C', 'JavaScript'] },
+  { category: 'Language', items: ['Kotlin', 'Java', 'TypeScript', 'JavaScript', 'Unix-C'] },
   {
     category: 'Framework',
     items: [
       'Spring Boot',
       'Spring Framework',
+      'Kotlin Coroutines',
       'Spring Data JPA',
       'Spring Batch',
       'Spring Security',
@@ -62,15 +64,27 @@ const skills: SkillGroup[] = [
       'Next.js',
     ],
   },
-  { category: 'Database', items: ['Oracle', 'PostgreSQL', 'Redis', 'DynamoDB', 'BigQuery'] },
+  {
+    category: 'Database',
+    items: ['MySQL', 'Oracle', 'PostgreSQL', 'Redis', 'DynamoDB', 'BigQuery'],
+  },
   {
     category: 'Infra',
-    items: ['AWS (EKS)', 'Azure (AKS)', 'Kubernetes', 'Docker', 'Helm Chart', 'Linux'],
+    items: [
+      'Docker',
+      'Kubernetes',
+      'AWS (EKS)',
+      'Azure (AKS)',
+      'Helm Chart',
+      'Linux',
+      'Shell Script',
+    ],
   },
   {
     category: 'DevOps',
-    items: ['GitHub Actions', 'Jenkins', 'Argo CD', 'Argo Workflow', 'Airflow', 'Swagger'],
+    items: ['Git', 'GitHub Actions', 'Jenkins', 'Argo CD', 'Argo Workflow', 'Airflow', 'Swagger'],
   },
+  { category: 'AI Dev Tools', items: ['Claude Code', 'Codex', 'MCP', 'Claude Cowork'] },
 ];
 
 const educations: Education[] = [
